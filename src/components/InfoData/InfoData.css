@@ -1,3 +1,77 @@
 .infoData {
     padding: 20px;
+    background-color: bisque;
+}
+
+.post-data {
+    display: grid;
+    grid-template-columns: 1fr 8fr 15fr;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(244, 248, 248);
+}
+
+.comment-data{
+    display: grid;
+    grid-template-columns: 1fr 8fr 10fr 15fr;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(244, 248, 248);   
+}
+
+.photo-data{
+    display: grid;
+    grid-template-columns: 1fr 15fr 5fr 5fr;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(244, 248, 248);   
+}
+
+.photo-data img{
+    border: 2px solid black;
+}
+
+.todo-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-content: center;
+}
+
+.todo-data{
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(244, 248, 248);   
+}
+
+.user-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-content: center;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(244, 248, 248);   
 }

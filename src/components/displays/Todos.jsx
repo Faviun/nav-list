@@ -2,11 +2,11 @@ import React from 'react';
 
 const Todos = ({data}) => {
     return (
-        <div>
-            {data.map((item) => <div>
+        <div className='todo-body'>
+            {data.map((item) => <div className='todo-data'>
                 <p>{item.id}</p>
                 <p>{item.title}</p>
-                <p>{item.completed}</p>
+                <p>{String(item.completed)}</p>
             </div>)}
         </div>
     );
