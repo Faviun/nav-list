@@ -4,13 +4,20 @@ const Users = ({data}) => {
     return (
         <div className='user-body'>
             {data.map((item) => <div className='user-data'>
-                <p>{item.name}</p>
-                <p>{item.username}</p>
-                <p>{item.email}</p>
-                {/* <p>{JSON.stringify(item.adress)}</p> */}
-                <p>{item.phone}</p>
-                <p><a href={item.website}>{item.website}</a></p>
-                {/* <p>{item.company}</p> */}
+                <p>Name: {item.name}</p>
+                <p>Username: {item.username}</p>
+                <p>Email: <a href={item.email}>{item.email}</a></p>
+                <p>Street: {item.address.street}</p>
+                <p>Suite: {item.address.suite}</p>
+                <p>City: {item.address.city}</p>
+                <p>Zipcode: {item.address.zipcode}</p>
+                <p>Lat: {item.address.geo.lat}</p>
+                <p>Lng: {item.address.geo.lng}</p>
+                <p>Phone: {item.phone}</p>
+                <p>Website: <a href={item.website}>{item.website}</a></p>
+                <p>Company name:{item.company.name}</p>
+                <p>CatchPhrase: {item.company.catchPhrase}</p>
+                <p>Bs: {item.company.bs}</p>
             </div>)}
         </div>
     );
